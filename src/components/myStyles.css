@@ -1,0 +1,325 @@
+.dark{
+    background-color: #2d3941 !important;
+    color: whitesmoke !important;
+}
+.main-container{
+    background-color: #f4f5f8;
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    border-radius: 20px;
+}
+.icon{
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+}
+  
+.login-box p{
+    font-size: 1rem;
+}
+.sidebar{
+    flex: 0.3;
+}
+.charArea-container{
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.charArea-container::-webkit-scrollbar{
+    display: none;
+}
+
+
+.sb-header{
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.sb-search
+{
+    background-color: white;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  
+}
+.sb-conversations::-webkit-scrollbar{
+    display: none;
+}
+.sb-conversations{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;overflow: scroll;
+    scrollbar-width: none;
+}
+.search-box{
+    outline-width: 0;
+    border:none;
+    font-size: 1.25rem;
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.conversation-container{
+    display: grid;
+    grid-template-columns: 32px auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+}
+.conversation-container:hover{
+    background-color: #d9d9d9;
+}
+.conversation-container:active{
+    background-color: white;
+}
+
+.con-icon{
+    grid-area: 1/1/3/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    height: 32px;
+    width: 32px;
+    padding: 2px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center; 
+}
+
+.con-title{
+     grid-area: 1/2/2/4; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.54);
+}
+.con-timeStamp{
+   justify-content: flex-end;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 0.75rem;
+}
+.con-lastMessage{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.75rem;
+}
+
+
+.chat-chatarea{
+  flex: 1;
+  background-color: pink;
+}
+.chat-header{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    background-color: white;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin-left: 15px;
+}
+.messages-container{
+    flex: 1;
+    background-color: white;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.chat-inputarea{
+    background-color: white;
+    padding: 5px 5px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.self-message-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.coversation-container{
+    display: flex;
+    flex-direction: row;
+}
+.other-text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    border-radius: 20px;
+    background-color:rgb(200, 200, 200);
+    padding: 10px 10px;
+    margin: 5px;
+    width: max-content;
+    margin: 10px; 
+}
+.self-timeStamp{
+   font: 0.75rem;
+   align-self: flex-end;
+   font-weight: lighter;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.messageBox{
+    display: flex;
+    flex-direction: column;
+    background-color: #63d780;
+    width: max-content;
+    padding: 10px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.welcome-logo{
+    height: 20vw;
+}
+.welcome-area{
+    flex:0.7;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: rgba(0, 0, 0, 0.54);
+    border-bottom: 5px solid #63d7b0;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.welcome-area p {
+    font-size: 20px
+}
+.createGroups-container{
+    flex: 0.7;
+    align-items: center;
+    padding : 20px 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.login-container{
+    height: 90vh;
+    width: 90vw;
+    background-color: #f4f5f8;
+    border-radius: 20px;
+    display: flex;
+}
+.image-container{
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box{
+    flex: 0.7;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #63d7b0;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 30px;
+}
+.login-box p{
+    font-size: 3rem;
+}
+.login-box Button{
+    background-color: #63d780;
+}
+.list-container{
+    flex: 0.7;
+}
+.ug-header{
+    background-color: white;
+    border-radius: 20px;
+    padding: 12px 5px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ug-title{
+    color: rgba(0, 0, 0, 0.54);
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+.ug-list{
+    flex: 1;
+    padding: 10px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.ug-list::-webkit-scrollbar{
+    display: none;
+}
+.list-item{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 5px;
+    margin: 10px;
+    transition-duration: 0.5s;
+}
+.list-item:hover{
+    background-color: rgb(226, 226, 226);
+}
+.list-item:active{
+    background-color: white;
+}
+
+
+
+@media only screen and (max-width: 40em){
+    .sb-search{
+        display: none;
+    }
+    .sb-conversations{
+        display: none;
+    }
+    .sb-header{
+        flex-direction: column;
+        flex: 1;
+        min-width: min-content;
+    }
+    .icon{
+        flex-direction: column;
+    }
+    .charArea-container{
+        flex: 1;
+    }
+    .sidebar{
+        flex: 0;
+    }
+    .main-container{
+        height: 100vh;
+        width: 100vw;
+    }
+}
